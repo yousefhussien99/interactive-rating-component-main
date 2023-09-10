@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(217, 12%, 63%);
+    --medium-gray: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    color: var(--medium-gray);
+    background-color: var(--very-dark-blue);
+}
+.Container {
+    width: fit-content;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--dark-blue);
+    margin :  10%  auto;
+    width: 30rem;
+}
+.Container img {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+.Container img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.Container h1{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.Container p {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    color: var(--light-gray);
+}
+.Container .rating{
+    text-align: center;
+}
+.Container input{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(213, 19%, 25%);
+    color: var(--light-gray);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.Container input:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+}
+.Container input:focus {
+    outline: none;
+    background-color: var(--light-gray);
+    color: var(--white);
+}   
+.bttn{
+    text-align: center;
+}
+.Container button[type="button"] {
+    margin: 3rem 0;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    background-color:var(--orange);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.Container button[type="button"]:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--orange);
+}
